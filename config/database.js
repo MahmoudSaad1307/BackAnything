@@ -3,7 +3,6 @@ const { Pool } = pg;
 
 const pool = new Pool({
   connectionString:
-    process.env.DATABASE_URL ||
     "postgresql://neondb_owner:npg_qeZiXpaQj30G@ep-dry-fire-ahz8j7dc.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require",
   // Connection pool settings
   max: 20, // Maximum number of clients in the pool
